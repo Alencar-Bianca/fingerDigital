@@ -1,0 +1,31 @@
+  <div class="container">
+    <div class="containerUser">
+      <div class="singleUser">
+        <p>Nome:</p>
+        <div [innerHTML]="userItem.nome" ></div>
+      </div>
+
+      <div class="singleUser">
+        <p>Endereço:</p>
+        <div class="ende">Rua: {{userItem.londradouro}}, {{userItem.bairro}} - {{userItem.cidade}} - {{userItem.cep}} <span>Nº</span> {{userItem.n}}</div>
+      </div>
+
+      <div class="singleUser">
+        <p>Email:</p>
+        <div class="" [innerHTML]="userItem.email" ></div>
+          </div>
+      </div>
+
+    <div>
+      <button class="btn" type="button"[routerLink]="['/edit', userItem.id]"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+    </div>
+  </div>
+
+
+<!-- <div [innerHTML]="" >{{userItem.londradouro}} {{userItem.bairro}}{{userItem.cidade}}{{userItem.cep}} {{userItem.n}}</div>
+<div [innerHTML]="userItem.complemento" ></div>
+<div [innerHTML]="userItem.email" ></div>
+<div>
+  <button type="button"[routerLink]="['/edit', userItem.id]"> Alterar</button>
+</div> -->
+

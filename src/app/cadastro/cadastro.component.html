@@ -1,0 +1,40 @@
+<section class="mainCad">
+  <div class="titulo">
+    <h1>{{title}}</h1>
+  </div>
+  <div class="cad">
+    <form (ngSubmit)="onSubmit()">
+      <div class="containerInput">
+        <p class="para">Nome </p>
+        <input name="nome" [(ngModel)]="usu.nome" class="input" type="text" placeholder="Nome" required>
+
+        <p  class="para">CEP </p>
+        <input name="cep" [(ngModel)]="usu.cep"  class="input" type="text" placeholder="CEP" required>
+      </div>
+
+      <div class="containerInput">
+        <p class="para">Londradouro </p>
+        <input name="londradouro" [(ngModel)]="usu.londradouro"  class="input"  type="text"placeholder="Londradouro"  required>
+        <p class="para">Nº </p>
+        <input name="n" [(ngModel)]="usu.n"  class="input " placeholder="Nº"  type="text" required>
+      </div>
+
+      <div class="containerInput">
+        <p class="para">Bairro </p>
+        <input name="bairro" [(ngModel)]="usu.bairro"  class="input" placeholder="Bairro"  type="text" required>
+        <p class="para">Complemento </p>
+        <input name="complemento" [(ngModel)]="usu.complemento"   class="input " placeholder="Complemento" type="text" required>
+        <p class="para">Cidade </p>
+        <input name="cidade" [(ngModel)]="usu.cidade"  class="input " placeholder="Cidade" type="text" required>
+      </div>
+
+      <div class="containerInput">
+        <p class="para">Email </p>
+        <input name="email" [(ngModel)]="usu.email"  class="input"  placeholder="Email"  type="email" required>
+      </div>
+
+      <div><button class="btn"  type="submit" >Salvar</button>
+      <button class="btn"  type="submit" [routerLink]="['/']"  >voltar</button></div>
+    </form>
+  </div>
+</section>

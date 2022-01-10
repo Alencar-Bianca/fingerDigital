@@ -1,0 +1,69 @@
+.login{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* height: 100vh; */
+  transform: translate(-50%,-50%);
+  /* border: 2px solid black; */
+  width: 50%;
+  padding: 10px 0;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.404);
+  padding: 0 2%;
+  text-align: center;
+}
+.img{
+   width: 100%;
+   max-width: 180px;
+  padding: 20px 0;
+}
+.containerInput{
+  padding: 50px 0;
+}
+.containerInput p{
+  font-family: 'Luxurious Roman', cursive;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.input{
+  display: block;
+  width: 100%;
+  border:none;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 22px;
+}
+.input:focus{
+  border-bottom: 1px solid forestgreen;
+}
+.btn{
+  width: 100%;
+  background-color: forestgreen;
+  cursor: pointer;
+  color:aliceblue;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  margin: 15px 0;
+}
+
+
+@media screen and (max-width: 500px) {
+  .img{
+
+    max-width: 150px;
+ }
+}
+
+
+@media screen and (max-height: 530px) {
+  .login{margin-top: 100px;
+     width: 70%;
+    padding: 10px 0;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.404);
+    padding: 0 2%;
+    text-align: center;
+  }
+}

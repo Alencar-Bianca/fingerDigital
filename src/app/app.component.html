@@ -1,0 +1,15 @@
+ <section class="main">
+  <section class="contentNav">
+    <nav class="sidemenu">
+      <ul>
+        <li class="li"><a [routerLink]="['/']" ><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        <li class="li" [routerLink]="['/cadastro']"><a><i class="fa fa-user-o" aria-hidden="true"></i></a></li>
+        <li [routerLink]="['/login']" class="li"><a><i class="fa fa-sign-out" aria-hidden="true"></i>
+        </a></li>
+      </ul>
+    </nav>
+  </section>
+  <section class="screen">
+    <router-outlet></router-outlet>
+  </section>
+</section>

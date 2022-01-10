@@ -1,0 +1,16 @@
+<div class="icon">
+  <p  clas="icon"><i class="fa fa-user-circle" aria-hidden="true"></i> Ola, FingerDigital</p>
+</div>
+<div class="container">
+  <ul>
+
+    <li *ngFor="let t of usu">
+      <app-user-item [userItem]="t"></app-user-item>
+    </li>
+
+    <button class="btn" type="button" [routerLink]="['/cadastro']" >Nova Tarefa</button>
+  </ul>
+</div>
+
+
+
